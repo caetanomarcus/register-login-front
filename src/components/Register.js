@@ -112,7 +112,7 @@ const Register = () => {
         }
        
         dispatch(setUserIsLoading(true));
-        axios.post("http://localhost:8080/registration", userData)
+        axios.post("https://api-login-register-marc.herokuapp.com/registration", userData)
         .then(res => {
             dispatch(setUserIsLoading(false));
             dispatch(setUserIsLoggedIn(true));

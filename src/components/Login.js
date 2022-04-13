@@ -106,7 +106,7 @@ const Login = () => {
 
     
     const handleClickLogin = () => {
-       axios.post('http://localhost:8080/auth', {
+       axios.post('https://api-login-register-marc.herokuapp.com/auth', {
            email: email,
            password: password,
     }).then(res => {

@@ -4,7 +4,7 @@ const token = localStorage.getItem("token");
 
 export const authApi = createApi({
     reducerPath: 'verify',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:8080/auth' }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://api-login-register-marc.herokuapp.com/auth' }),
     tagTypes: ['Post'],
     endpoints: (build) => ({
         // verify: build.query({

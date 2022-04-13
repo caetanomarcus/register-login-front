@@ -16,7 +16,7 @@ function App() {
 
   const fetchData = async () => {
    if(token){
-    axios.get("http://localhost:8080/auth/verify", {
+    axios.get("https://api-login-register-marc.herokuapp.com/auth/verify", {
       headers: {
         "x-access-token": token,
         "Content-Type": 'application/json',
